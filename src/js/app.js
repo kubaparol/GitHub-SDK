@@ -1,4 +1,3 @@
-import './../css/reset.css';
 import './../css/base.css';
 
 import data from './data'
