@@ -45,5 +45,49 @@ describe('GitHubSDK', () => {
 
             return promise.then(resp => expect(typeof resp).toBe('object'));
         });
+
+        describe('getUserLogin()', () => {
+            it('Should return string with user login when data has been downloaded', () => {
+            const name = data.name;
+            const token = data.token;
+            const newGH = new GitHubSDK(name, token);
+            const promise = newGH.getUserLogin();
+
+            return promise.then(resp => expect(typeof resp).toBe('string'));
+            });
+        });
+
+        describe('getUserName()', () => {
+            it('Should return string with user name when data has been downloaded', () => {
+            const name = data.name;
+            const token = data.token;
+            const newGH = new GitHubSDK(name, token);
+            const promise = newGH.getUserName();
+
+            return promise.then(resp => expect(typeof resp).toBe('string'));
+            });
+        });
+
+        describe('getUserAvatarUrl()', () => {
+            it('Should return string with user avatar url when data has been downloaded', () => {
+            const name = data.name;
+            const token = data.token;
+            const newGH = new GitHubSDK(name, token);
+            const promise = newGH.getUserAvatarUrl();
+    
+            return promise.then(resp => expect(typeof resp).toBe('string'));
+            });
+        });
+
+        describe('getUserReposUrl()', () => {
+            it('Should return string with user repos url when data has been downloaded', () => {
+            const name = data.name;
+            const token = data.token;
+            const newGH = new GitHubSDK(name, token);
+            const promise = newGH.getUserReposUrl();
+
+            return promise.then(resp => expect(typeof resp).toBe('string'));
+            });
+        });
     });
 });
