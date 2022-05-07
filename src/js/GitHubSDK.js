@@ -24,27 +24,27 @@ export default class GitHubSDK {
         }
         const url = `${this.url}users/${this.name}`;
         
-        return this._fetch(url, options, 'Error downloading user data');
+        return await this._fetch(url, options, 'Error downloading user data');
     }
 
     async getUserLogin() {
         const data = await this.getUserData();
-        return data.login;
+        return await data.login;
     }
 
     async getUserName() {
         const data = await this.getUserData();
-        return data.name;
+        return await data.name;
     }
 
     async getUserAvatarUrl() {
         const data = await this.getUserData();
-        return data.avatar_url;
+        return await data.avatar_url;
     }
 
     async getUserReposUrl() {
         const data = await this.getUserData();
-        return data.repos_url;
+        return await data.repos_url;
     }
 
     _fetch(url, options, error) {
