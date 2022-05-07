@@ -29,22 +29,22 @@ export default class GitHubSDK {
 
     async getUserLogin() {
         const data = await this.getUserData();
-        return await data.login;
+        return data.login;
     }
 
     async getUserName() {
         const data = await this.getUserData();
-        return await data.name;
+        return data.name;
     }
 
     async getUserAvatarUrl() {
         const data = await this.getUserData();
-        return await data.avatar_url;
+        return data.avatar_url;
     }
 
     async getUserReposUrl() {
         const data = await this.getUserData();
-        return await data.repos_url;
+        return data.repos_url;
     }
 
     _fetch(url, options, error) {
