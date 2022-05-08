@@ -1,3 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
-    background-color: burlywood;
+    color: var(--document-color);
+    background-color: var(--body-bcg-color);
+    padding: 10px;
+}
+
+:root {
+    --document-color: #dfe6e9;
+    --body-bcg-color: #22272E;
+    --item-bcg-color: rgb(99, 110, 114, 0.4);
+    --button-bcg-color: rgb(45, 52, 54);
+    --link-color: #eaf0f3;
+    --token-info-color: #74b9ff;
+    --token-link-color: #81ecec;
+}
+
+/* header */ 
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header__title {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.header__span {
+    opacity: 0.8;
+}
+
+/* form */ 
+
+.search-form {
+    margin: 10px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--item-bcg-color);
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}
+
+.label__input {
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.search-form__input--submit {
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 4px 15px;
+    border: none;
+    background-color: var(--button-bcg-color);
+    color: var(--link-color);
+}
+
+.alerts__item {
+    color: red;
+    text-align: center;
+}
+
+.search-form__info {
+    color: var(--token-info-color);
+    font-size: 0.75rem;
+}
+
+.info__link {
+    color: var(--token-link-color);
+    text-decoration: none;
+}
+
+/* user section */
+
+.user {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__avatar {
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    display: none;
+}
+
+.user__name {
+    font-size: 2rem;
+}
+
+.user__login {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+/* repos list */
+
+.list {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.list__item {
+    padding: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background-color: var(--item-bcg-color);
+    border: 1px solid grey;
+}
+
+.list__item--prototype {
+    display: none;
+}
+
+.item__header {
+    margin-bottom: 5px;
+}
+
+.item__description {
+    margin-bottom: 10px;
+}
+
+.item__button {
+    padding: 4px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--button-bcg-color);
+    margin: 5px 8px;
+}
+
+.button__link {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+@media (min-width: 850px) {
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list__item {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .item__button, .search-form__input--submit {
+        transition: .2s;
+        cursor: pointer;
+    }
+    
+    .item__button:hover, .search-form__input--submit:hover {
+        background-color: grey;
+    }
 }
