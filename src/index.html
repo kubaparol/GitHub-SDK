@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyGH</title>
+    <title>Project List</title>
 </head>
 <body>
+    <header class="header">
+        <h1 class="header__title">Project list</h1>
+        <span class="header__span">powered by GitHub API</span>
+    </header>
+    <main>
+        <form class="search-form" autocomplete="off">
+            <label class="search-form__label search-form_label--name">Name:
+                <input name="inputName" class="label__input label__input--name" >
+            </label>
+            <label class="search-form__label search-form__label--token">Token:
+                <input name="inputToken" type="password" class="label__input label__input--token" >
+            </label>
+            <span class="search-form__info">Not sure how to generate a token? <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank" class="info__link">Click here!</a></span>
+            <input type="submit" value="Search repo" class="search-form__input--submit">
+            <ul class="search-form__alerts"></ul>
+        </form>
+        <section class="user">
+            <img src="" alt="avatar" class="user__avatar">
+            <span class="user__name"></span>
+            <span class="user__login"></span>
+        </section>
+        <ul class="list">
+            <li class="list__item list__item--prototype">
+                <header class="item__header">
+                    <h2 class="header__name"></h2>
+                </header>
+                <p class="item__description"></p>
+                <button class="item__button"><a href="" target="_blank" class="button__link button__link--go-to-repo">Go to repo</a></button>
+                <button class="item__button"><a href="" target="_blank" class="button__link button__link--deploy-app">Deployed app</a></button>
+            </li>
+        </ul>
+    </main>
 </body>
 </html>
