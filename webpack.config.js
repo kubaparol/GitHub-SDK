@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: ['whatwg-fetch', './src/js/app.js'],
+    entry: ['whatwg-fetch', './docs/js/app.js'],
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'app.min.js',
@@ -23,7 +23,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: './docs/index.html',
             filename: 'index.html'
         })
     ]

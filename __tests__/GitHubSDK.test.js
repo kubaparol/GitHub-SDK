@@ -1,7 +1,7 @@
 import nodeFetch from 'node-fetch';
 global.fetch = nodeFetch;
-import GitHubSDK from './../src/js/GitHubSDK';
-import data from './../src/js/data';
+import GitHubSDK from './../docs/js/GitHubSDK';
+import data from './../docs/js/data';
 
 describe('GitHubSDK', () => {
 

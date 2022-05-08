@@ -2,11 +2,17 @@
 
 ![screen app](./assets/app-screen.png)
 
+&nbsp;
+
 ## :mag: Overview
 
 This project is something like a [Software Development Kit](https://pl.wikipedia.org/wiki/Software_development_kit). It provides a simple way to use the GitHub API. 
 
 You can enter your username and a generated token.
+
+Name and token fields are validated.
+
+My SDK is built according to TDD methodology, i.e. red- green-refactor.
 
 [Click to see]() the live version of my app and check your repositories!
 
@@ -79,3 +85,5 @@ function init() {
 &nbsp;
 
 ## :clap: Special thanks
+
+Special thanks to my [Mentor - devmentor.pl](https://devmentor.pl/) - for providing me with this task and for code review.
