@@ -7,7 +7,8 @@
     "test": "jest",
     "test-watch": "jest --watchAll",
     "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d docs"
   },
   "jest": {
     "transformIgnorePatterns": []
@@ -37,6 +38,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "node-fetch": "^2.6.7",
     "style-loader": "^3.3.1"
   }
