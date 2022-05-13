@@ -8,7 +8,7 @@
     "test-watch": "jest --watchAll",
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "transformIgnorePatterns": []
@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/kubaparol/task-js-testing/issues"
   },
-  "homepage": "https://github.com/kubaparol/task-js-testing#readme",
+  "homepage": "https://kubaparol.github.io/GitHub-SDK",
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/preset-env": "^7.17.10",
@@ -38,7 +38,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^4.0.0",
     "node-fetch": "^2.6.7",
     "style-loader": "^3.3.1"
   }
