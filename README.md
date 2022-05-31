@@ -14,7 +14,7 @@ Name and token fields are validated.
 
 My SDK is built according to TDD methodology, i.e. red-green-refactor.
 
-[Click to see](https://kubaparol.github.io/GitHub-SDK/) the live version of my app and check your repositories!
+[Click to see](https://kubaparol.github.io/github-sdk/) the live version of my app and check your repositories!
 
 &nbsp;
 
