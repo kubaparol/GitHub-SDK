@@ -1,6 +1,6 @@
 # GitHub SDK
 
-![screen app](./assets/app-screen.png)
+![screen app](./assets/screen.png)
 
 &nbsp;
 
