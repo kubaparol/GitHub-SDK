@@ -6,15 +6,15 @@
 
 ## :mag: Overview
 
+:fire: Click to see live version: [GitHub-SDK](https://kubaparol.github.io/github-sdk/)!
+
 This project is something like a [Software Development Kit](https://pl.wikipedia.org/wiki/Software_development_kit). It provides a simple way to use the GitHub API. 
 
-You can enter your username and a generated token.
+You can enter your username and a generated token and then you will see your repositories with the option to view deployed app or navigate to the repository of this app.
 
 Name and token fields are validated.
 
 My SDK is built according to TDD methodology, i.e. red-green-refactor.
-
-[Click to see](https://kubaparol.github.io/github-sdk/) the live version of my app and check your repositories!
 
 &nbsp;
 
