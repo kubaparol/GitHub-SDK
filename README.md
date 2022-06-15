@@ -4,6 +4,16 @@
 
 &nbsp;
 
+### Contents:
+
+- [Overview](#mag-overview)
+- [Technologies](#bulb-technologies)
+- [Installation](#cd-installation)
+- [Contact](#wave-feel-free-to-contact-me)
+- [Special thanks](#clap-special-thanks)
+
+&nbsp;
+
 ## :mag: Overview
 
 :fire: Click to see live version: [GitHub-SDK](https://kubaparol.github.io/github-sdk/)!
